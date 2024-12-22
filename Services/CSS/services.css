@@ -1,0 +1,148 @@
+/* effects that targets more than 1 elements */
+.section-topic {
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    background-color: #406794;
+    color: white;
+}
+
+.card-title {
+    height: 3rem;
+    color: #213A57;
+}
+
+.card-text {
+    height: 8rem;
+    color: #213A57;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+/* fade in during load */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+/* scroll reveal */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+  
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}  
+  
+body.loaded .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
+main, .health, .education {
+    margin-top: 5rem;
+    padding: 2rem 19rem 2rem 19rem;
+    text-align: justify;
+}
+
+.section-topic {
+    color: #213a57;
+    font-weight: 900;
+}
+
+.row {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-button {
+    display: flex;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    width: 20rem;
+    background-color: #6F92BB;
+}
+
+.form-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media only screen and (max-width: 991px) { 
+    main {
+        margin: 8rem 1rem 1rem 1rem;
+        padding: 0;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 452px) {
+    main {
+        margin: 5rem 0 0 0;
+        padding: 10px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    main {
+        margin: 3rem 0 0 0;
+    }
+}
+
+.healthbanner, .educbanner {
+    width: 100%;
+}
+
+.card {
+    background-image: url("../Assets/3.png");
+    background-position: center;
+    border: 1px solid #406794;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover {
+    margin-top: 8rem;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+}
+.cover .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: #ffffff;
+}
+
+.banner {
+    background-color: #406794;
+    outline: 1px solid #406794;
+}
+
+    
